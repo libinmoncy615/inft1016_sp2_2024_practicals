@@ -1,10 +1,16 @@
 <html>
 <head>
     <title>Week 10</title>
+
+    
+
     <img src="http://www.outgrabe.net/cat01.jpg" onmouseover="this.src='http://www.outgrabe.net/cat02.jpg'"/>
     <script>
         counter = 0;
+        // Functiopn to count click
         function countClicks(element) {
+            /* hi 
+            */
     counter = counter + 1;
     var output = 'The link was pressed ' + counter + ' times.';
     element.innerHTML = output;
@@ -14,6 +20,8 @@
 
 </head>
 <body>
+    <body>
+    
     <h1>JavaScript Demo</h1>
     <a href="#" onclick="countClicks(this);">Click me</a>
     <p id="boxy"></p>
