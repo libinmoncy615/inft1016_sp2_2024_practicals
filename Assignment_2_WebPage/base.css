@@ -1,0 +1,80 @@
+/* base.css */
+
+/* Light Theme (default) */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --bg-color: #fdffff;
+    --font-color: #000000;
+    --heading-color: #3ce7b4;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --primary-color: #eee5e4;
+    --secondary-color: #9b59b6;
+    --bg-color: #34495e;
+    --font-color: #ecf0f1;
+    --heading-color: #3498db;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header .logo {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin-top: 10px;
+    font-size: 2em;
+    color: var(--heading-color);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+}
