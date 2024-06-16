@@ -2,17 +2,17 @@
 
 /* Light Theme (default) */
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #2ecc71;
-    --bg-color: #fdffff;
-    --font-color: #000000;
-    --heading-color: #3ce7b4;
+    --primary-color: #3685b9;
+    --secondary-color: #52ee86;
+    --bg-color: #7ec5d6;
+    --font-color: #fdfdfd;
+    --heading-color: #f6fdfb;
 }
 
 /* Dark Theme */
 [data-theme="dark"] {
-    --primary-color: #eee5e4;
-    --secondary-color: #9b59b6;
+    --primary-color: #fff7f7;
+    --secondary-color: #070607;
     --bg-color: #34495e;
     --font-color: #ecf0f1;
     --heading-color: #3498db;
@@ -27,7 +27,7 @@ body {
 
 header {
     background-color: var(--primary-color);
-    padding: 10px 20px;
+    padding: 10px 10px;
     text-align: center;
 }
 
@@ -36,6 +36,12 @@ header .logo {
     height: auto;
     display: block;
     margin: 0 auto;
+}
+
+header .small-image {
+    height: 280px; 
+    display: inline-block;
+    margin-left: -650px;
 }
 
 header h1 {
@@ -70,9 +76,9 @@ button {
     font-size: 1em;
     cursor: pointer;
     background-color: var(--secondary-color);
-    color: white;
+    color: rgb(253, 249, 249);
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 button:hover {

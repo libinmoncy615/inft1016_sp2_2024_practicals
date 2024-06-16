@@ -5,16 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UniSA</title>
     <link rel="stylesheet" href="base.css">
+    <style>
+        
+        .small-image {
+            height: 150px; 
+            display: inline-block;
+            margin-left: 10px;
+        }
+    </style>
 </head>
-<body>
+<body data-theme="light">
     <header>
         <h1>Welcome to UniSA</h1>
         <img src='https://seeklogo.com/images/U/UniSA-logo-A2479E0B4C-seeklogo.com.png' alt="UniSA Logo" class="logo">
+        <img src='C:/Users/DELL/Desktop/image2.jpg' alt="Small Image" id="small-image" class="small-image">
         <button onclick="toggleTheme()">Toggle Theme</button>
+        <button onclick="changeImage()">Change Image</button>
     </header>
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="Home_page.html">Home</a></li>
             <li><a href="second_page.html">Courses</a></li>
             <li><a href="#">To Do Tasks</a></li>
         </ul>
@@ -36,7 +46,7 @@
         </article>
     </main>
     <footer>
-        <p>©Copyright 20XX by <Insert your name> All rights reserved.</p>
+        <p>©Copyright 20XX by Your Name All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>
